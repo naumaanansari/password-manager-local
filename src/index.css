@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply to the entire document or specific elements */
+body::-webkit-scrollbar,
+div::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  height: 8px; /* Height of the scrollbar */
+  border-radius: 100px;
+}
+
+body::-webkit-scrollbar-thumb,
+div::-webkit-scrollbar-thumb {
+  background-color: green; /* Color of the scrollbar thumb */
+  border-radius: 100px; /* Round corners of the thumb */
+  border: 3px solid transparent; /* Space around the thumb */
+  background-clip: content-box; /* Adjust the background to fit within the border */
+}
+
+body::-webkit-scrollbar-track,
+div::-webkit-scrollbar-track {
+  background: #f1f1f13d; /* Background of the scrollbar track */
+  border-radius: 100px; /* Round corners of the track */
+  
+}
